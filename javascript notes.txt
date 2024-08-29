@@ -1,0 +1,285 @@
+Variable = 3 elements (valeur, nom , type)
+let/const pour declarer une varibke
+	let decalre une variable qui peut changer dans le code
+	const decalre une varaible constante
+(var aussi mais considere obsolete)
+Pour vérifier le contenu d’une variable, il est possible d’utiliser l’instruction console.log(), avec entre les parenthèses, le nom de la variable.
+
+string
+number
+boolean
+
+pour modifier leur valeurs on utilise des opérateurs
+ex : let placesDejaVendues = 150
+     placesDejaVendues = placesDejaVendues + 10
+
+
+
+On peut écrire aussi 
+	ley placesDejaVendues = 150
+	placesDejaVendues += 10
+
+
+// sert pour les commentaires
+
+pour qu'il y'ai une addition entre deux variabes avec des nombres , il faut que variable=Number(valeur de la variable)
+
+
+
+Pour declarer un objet on utilise des accolades
+ex :
+let monPersonnage = {
+nom:
+prenom:
+...
+}
+
+
+
+Pour déclarer un objet en JavaScript, vous devez utiliser les accolades  "{ }"  . Les propriétés d’un objet ont un nom et une valeur qui sont assignées avec deux points ":" . Les propriétés sont séparées entre elles par des virgules "," .
+
+
+Pour ajouter une propriété, vous devez écrire le nom de votre objet, séparé par un point  .  avec le nom de votre nouvelle propriété :
+
+
+
+
+les tableaux c,est entre crochets
+methodes:
+pour ajouter un element c'est .push (tujours en derniers place)
+.pop supprime le dernier element du tableau
+.shift supprime le premier element
+
+
+Pour accéder au contenu d'une case, on a par ex : let nomtableau = ellemet du tableau[position ]
+
+.lenght  c pr le nb d'element du tableau
+ 
+
+copie par valeur c'est quand le contenu est de type est simple (boolean number ou string)
+par referencce c'est quand  le contenu est de type "complexe"
+
+Dans le cas d’une copie par valeur, si vous modifiez la valeur d’une des deux variables, la valeur de l’autre ne change pas. Dans le cas d’une copie par référence, si vous changez la valeur de la première variable, la valeur de la seconde est affectée aussi.
+
+
+Pour déclarer un nouveau tableau et recopier toutes les valeurs une par une.
+un spread operateur est un opérateur qui nous permet de faire automatiquement la copie, et cet opérateur s’écrit" …."
+
+
+
+
+Les blocs de code sont des regroupements de lignes de code. Ils permettent d’organiser votre code et de clarifier à quoi sert un groupe de lignes de code. En JavaScript, ils sont délimités par des accolades  { }  .
+
+
+opérateurs de comparaison
+< inférieur à
+
+<= inférieur ou égal à
+
+=== égal à
+
+>= supérieur ou égal à
+
+> supérieur à
+
+!== différent de
+
+
+boucle for et while ()
+
+
+fonction exemple :
+function retournerMessageScore(score, nombreQuestions) {
+    let message = 'Votre score est de ' + score + ' sur ' + nombreQuestions
+    return message
+}
+
+
+
+Utilisez defer pour différer l’exécution du script
+
+Utilisez différentes syntaxes pour récupérer un élément
+JavaScript propose tout un éventail de méthodes pour récupérer les éléments du DOM. Dans ce chapitre, nous en aborderons trois :
+
+getElementById ;
+
+querySelector ;
+
+querySelectorAll.
+
+
+CreateElement est une méthode fournie par JavaScript, accessible depuis document. Elle permet de créer n’importe quelle balise :
+
+L’interpolation consiste à entourer la chaîne de caractères avec des backticks : `  . Ce caractère correspond à l’accent du “è”, mais sans le e en dessous 🙂. Ainsi, quand nous voulons insérer une variable, il suffit de l’entourer avec${}.
+
+Insérez votre HTML grâce à innerHTML
+
+Écoutez un événement avec addEventListener
+AddEventListener est une méthode fournie par JavaScript, qui peut être appelée directement depuis les éléments HTML. Cette méthode prend deux paramètres : 
+
+le nom de l’événement, comme click, par exemple ;
+
+une fonction. 
+
+
+Un formulaire est composé d’une balise form qui englobe une série d’autres balises qui composent le formulaire : labels, input, texterea et select.
+
+
+
+Les balises labels
+Les balises labels servent à indiquer un texte, lié au champ que l’utilisateur va devoir remplir. 
+
+Les balises input
+Les balises input (“entrée”, en français) forment le cœur des formulaires. Elles permettent à l’utilisateur de saisir des données. D’ailleurs, nous en avons déjà utilisé une dans notre projet. Eh oui, rappelez-vous, c’est grâce à cela que le joueur peut maintenant saisir le mot qu’il doit recopier.
+
+Les balises textarea
+La balise input de type texte ne comporte qu’une seule ligne. Elle n’est donc pas indiquée pour saisir une grande portion de texte, comme un commentaire. Dans ce cas, la meilleure solution est d’utiliser une balise textarea, dans laquelle il sera plus pratique d’écrire des paragraphes :
+
+Les balises select
+La balise select permet de créer une liste déroulante où l'utilisateur peut sélectionner une option à partir d'une liste prédéfinie d'options. La liste d'options est définie à l'aide de balises option imbriquées à l'intérieur de la balise select.
+
+Récupérez la valeur d’un champ
+Maintenant que nous savons à quoi ressemble un formulaire, il est temps de récupérer, dans notre code JavaScript, le contenu de chacun de ces champs. Pour y parvenir, nous utiliserons différentes méthodes, en fonction du type de champ.
+
+Récupérez les valeurs avec la propriété “value”
+La plupart du temps, il est assez simple de récupérer la valeur d’un champ. Il suffit d’utiliser la propriété value.
+
+Voici un exemple avec un champ appelé name :
+
+<input type="text" id="nom" name="nom">
+Pour récupérer sa valeur en JavaScript, nous écrirons :
+
+let baliseNom = document.getElementById("nom")
+let nom = baliseNom.value
+console.log(nom); // affiche ce qui est contenu dans la balise name
+Cette méthode fonctionne pour la plupart des balises :
+
+input de type texte, numérique, e-mail, mot de passe ; 
+
+textarea ;
+
+select. 
+
+
+Récupérez les valeurs des cases à cocher
+Une case à cocher est un cas particulier, car l’utilisateur ne rentre pas une valeur. Il décide de cocher, ou non, la case. La valeur de ce champ est donc nécessairement true si la case est cochée, ou false si elle ne l’est pas.
+
+Pour vérifier cela, vous devez utiliser la propriété checked.
+
+
+pour emvpevher submit de recharger la page on utiise preventDefault
+
+form.addEventListener("submit", (event) => {
+    // On empêche le comportement par défaut
+    event.preventDefault();
+    console.log("Il n’y a pas eu de rechargement de page");
+
+    // On récupère les deux champs et on affiche leur valeur
+    const nom = document.getElementById("nom").value;
+    const email = document.getElementById("email").value;
+    console.log(nom);
+    console.log(email);
+});
+
+
+Dans ce code, j’ai  :
+
+écouté l'événement submit sur le formulaire ;
+
+fait un preventDefault pour éviter un rechargement de la page ;
+
+vérifié la valeur du champ ;
+
+affiché un message dans la console pour vérifier.
+
+
+En utilisant la méthode trim(), vous pouvez ainsi nettoyer le champ et supprimer automatiquement les espaces et autres tabulations autour de la chaîne à tester !
+
+
+
+
+
+Pour vérifier la valeur d’un champ à la saisie, le principe est le même. Nous allons écouter un événement. Deux types d'événements sont possibles dans ce cas :
+
+l’événement input : il se déclenche à chaque fois que l’utilisateur tape une lettre dans le champ ;
+
+l’événement change : il se déclenche quand l’utilisateur a fini de taper, et sélectionne un autre élément de la page.  
+
+
+
+Le principe des expressions régulières est de décrire, dans un format précis, l’ensemble des chaînes de caractères possibles, puis de tester si la chaîne de caractères correspond à ce format. Les expressions régulières sont également appelées RegEx ou RegExp, pour “Regular Expression”, en anglais.
+
+
+
+
+let chaine = "cachalot"; // Testez avec des chiffres pour voir la différence
+let regex = new RegExp("^[a-z]+$");
+let resultat = regex.test(chaine);
+console.log(resultat); // Affiche true.
+
+
+Voici quelques exemples d’expressions régulières simples :
+
+[a-z]  : une lettre entre a et z ;
+
+[a-zA-Z]  : une lettre entre a et z ou A et Z ; 
+
+[a|b]  : une lettre : a ou b, à l’exclusion de toutes les autres ;
+
+\d  : n’importe quel chiffre ;
+
+\w  : n’importe quelle lettre ;
+
+\d{3}  : au moins trois chiffres.
+
+
+
+
+
+
+[a-z0-9._-]+
+Cela signifie que nous voulons au moins un caractère qui correspond à ce qui est entre crochets. Donc un caractère qui soit :
+
+une lettre entre a et z ;
+
+un chiffre entre 0 et 9 ;
+
+le caractère  .  ;
+
+le caractère  _  ;
+
+le caractère  -  .
+
+Étape 2 : vérifiez l’arobase
+Ensuite il nous faut un @. Nous écrirons donc :
+
+[a-z0-9._-]+@
+Étape 3 : vérifiez le fournisseur
+Puis nous avons à nouveau un mot (le fournisseur). Nous écrirons donc :
+
+[a-z0-9._-]+@[a-z0-9._-]+
+Étape 4 : vérifiez le point
+Le  .  étant utilisé comme symbole dans les expressions régulières, nous devrons l'échapper, c'est-à-dire expliquer à l’interpréteur que ce  .  doit être considéré comme le caractère  .  , et pas interprété.
+
+[a-z0-9._-]+@[a-z0-9._-]+\.
+Étape 5 : vérifiez l'extension
+Et finalement, nous voulons ajouter l'extension :
+
+[a-z0-9._-]+@[a-z0-9._-]+\.[a-z0-9._-]+
+L’expression dans son ensemble signifie donc : un caractère ou plus, suivi d’un @, suivi d’un caractère ou plus, suivi d’un point, suivi d’un caractère ou plus : nous avons nos 5 étapes !
+
+
+
+
+Le bloc try / catch est composé de deux parties : 
+
+l’instruction try (essayer, en français) va essayer d’exécuter du code ; 
+
+l’instruction catch (attraper, en français) va attraper les éventuelles erreurs pour les gérer. 
+
+
+throw (lancer, en anglais). Cette dernière nous permet de lancer nos propres exceptions, qui pourront alors être attrapées par un catch.
+
+font awesome = librairie caracteres
+/*   */ c pr commenter
+

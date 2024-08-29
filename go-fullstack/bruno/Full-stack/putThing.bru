@@ -1,0 +1,21 @@
+meta {
+  name: putThing
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:3000/api/stuff/66cdf3f6d9e1fd0b54ab0b48
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "title": "Chaussures running Homme - KIPRUN KS900 Light gris jaune",
+      "description": "La chaussure de running homme légère et amortissante saura vous accompagner dans toutes vos sorties de course à pied, jusqu’au marathon.",
+      "imageUrl": "https://contents.mediadecathlon.com/p2603087/k$de07f1ca9ba73a292d284413d9f208f8/sq/chaussures-running-homme-kiprun-ks900-light-gris-jaune.jpg?format=auto&f=646x646",
+      "userId": "Jeremy",
+      "price": 20
+  }
+}

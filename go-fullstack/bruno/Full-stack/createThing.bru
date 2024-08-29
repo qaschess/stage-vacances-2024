@@ -1,0 +1,21 @@
+meta {
+  name: createThing
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/stuff
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "adidas F50 League FG Adulte Blanche",
+  "description":"Vivez la renaissance d'une icône avec le retour de la F50 ! La chaussure idéale est de retour pour libérer une vitesse phénoménale comme Messi.", 
+  "imageUrl": "https://contents.mediadecathlon.com/p2728537/k$84b0f36dbe3b7a8edcf9d7dd39455ea1/sq/adidas-f50-league-fg-adulte-blanche.jpg?format=auto&f=646x646",
+  "userId": "Jeremy",
+  "price": 10
+  }
+}
