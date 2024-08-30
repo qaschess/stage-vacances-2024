@@ -1,0 +1,92 @@
+{
+    "messages": [
+      {
+        "id": "b5cc2448d7710c9546b0d3ff502cb777",
+        "createdAt": "2024-08-26T08:46:17.172Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.172Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_RETURN_UPDATED_V1",
+        "location": "JOURNEY/JEREMY/QASSIM/RETURN_UPDATED",
+        "transactional": true,
+        "audience": {}
+      },
+      {
+        "id": "3c6c709202a21a4c1d7940b3654577e0",
+        "createdAt": "2024-08-26T08:46:17.172Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.172Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_RETURN_CREATED_V1",
+        "location": "TRANSACTIONAL/JEREMY/QASSIM/RETURN_CREATED",
+        "transactional": true,
+        "audience": {}
+      },
+      {
+        "id": "87509d0cc314ebe1a6de05e0fee23b60",
+        "createdAt": "2024-08-26T08:46:17.171Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.171Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_REFUND_VOID_V1",
+        "location": "TRANSACTIONAL/JEREMY/QASSIM/REFUND",
+        "transactional": true,
+        "audience": {}
+      },
+      {
+        "id": "5aa0316c9ba9cda5bb8f1a443e5d74bb",
+        "createdAt": "2024-08-26T08:46:17.170Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.170Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_REFUND_V1",
+        "location": "TRANSACTIONAL/JEREMY/QASSIM/REFUND",
+        "transactional": true,
+        "audience": {}
+      },
+      {
+        "id": "0eb366a68dd42d8eb6c5341f56c5f730",
+        "createdAt": "2024-08-26T08:46:17.169Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.169Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_ORDER_VALIDATED_V1",
+        "location": "TRANSACTIONAL/JEREMY/QASSIM/ORDER_VALIDATED",
+        "transactional": true,
+        "audience": {}
+      },
+      {
+        "id": "d5ecbeb8377bf0b5ae158a73cddac35e",
+        "createdAt": "2024-08-26T08:46:17.168Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.168Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_ORDER_TO_COLLECT_V1",
+        "location": "TRANSACTIONAL/JEREMY/QASSIM/ORDER_TO_COLLECT",
+        "transactional": true,
+        "audience": {}
+      },
+      {
+        "id": "b4262f30f6f64bd90e54a763c64131df",
+        "createdAt": "2024-08-26T08:46:17.167Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.167Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_ORDER_RECEIPT_V1",
+        "location": "TRANSACTIONAL/JEREMY/QASSIM/ORDER_RECEIPT",
+        "transactional": true,
+        "audience": {}
+      },
+      {
+        "id": "cb8663499aea0bd78dafba06bfca1025",
+        "createdAt": "2024-08-26T08:46:17.166Z",
+        "createdBy": "uid:2020",
+        "updatedAt": "2024-08-26T08:46:17.166Z",
+        "updatedBy": "uid:2020",
+        "name": "MAX_ORDER_IN_TRANSIT_V1",
+        "location": "JOURNEY/JEREMY/QASSIM/ORDER_IN_TRANSIT",
+        "transactional": true,
+        "audience": {}
+      }
+    ]
+}
