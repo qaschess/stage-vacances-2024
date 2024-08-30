@@ -21,9 +21,9 @@ class NamedValue<T> {
     }
 }
 
-let value = new NamedValue<number>('myNumber');
-value.setValue(10);
-console.log(value.toString()); // myNumber: 10
+let value2 = new NamedValue<number>('myNumber');
+value2.setValue(10);
+console.log(value2.toString()); // myNumber: 10
 
 type Wrapped<T> = { value: T };
 
@@ -47,9 +47,9 @@ class NamedValue2<T = string> {
     }
 }
 
-let value2 = new NamedValue2('myNumber');
-value.setValue(1);
-console.log(value.toString()); // myNumber: myValue
+let value3 = new NamedValue2('myNumber');
+value3.setValue('myValue');
+console.log(value3.toString()); // myNumber: myValue
 
 function createLoggedPair<S extends string | number, T extends string | number>(v1: S, v2: T): [S, T] {
     console.log(`creating pair: v1='${v1}', v2='${v2}'`);

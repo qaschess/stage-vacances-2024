@@ -6,32 +6,21 @@ interface Point {
 let pointPart: Partial<Point> = {}; // `Partial` allows x and y to be optional
 pointPart.x = 10;
 
-interface Car {
+interface vehicle {
     make: string;
     model: string;
     mileage?: number;
 }
 
-let myCar: Required<Car> = {
-    make: 'Ford',
+let myCar: Required<vehicle> = {
+    make : 'Ford',
     model: 'Focus',
     mileage: 12000 // `Required` forces mileage to be defined
 };
 
-const nameAgeMap: Record<string, number> = {
+const nameageMap: Record<string, number> = {
     'Alice': 21,
     'Bob': 25
-};
-
-interface Person {
-    name: string;
-    age: number;
-    location?: string;
-}
-
-const bob : Omit<Person, 'age' | 'location'> = {
-    name: 'Bob'
-    // `Omit` has removed age and location from the type and they can't be defined here
 };
 
 interface Person {
@@ -58,8 +47,3 @@ interface Person {
     name: string;
     age: number;
   }
-  const person: Readonly<Person> = {
-    name: "Dylan",
-    age: 35,
-  };
-  person.name = 'Jule'; // prog.ts(11,8): error TS2540: Cannot assign to 'name' because it is a read-only property.
